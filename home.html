@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>My online CV</title>
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.11.2/css/all.css"
+    />
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!-- Material Design Bootstrap -->
+    <link rel="stylesheet" href="css/mdb.min.css" />
+    <link rel="stylesheet" href="./css/home.css" />
+  </head>
+
+  <body>
+    <!--Parallax-->
+    <header class="parallax">
+      <h1>Ioana Moldovan</h1>
+      <p class="bounceInUp">Let's meet!</p>
+    </header>
+
+    <!--Navbar -->
+    <nav
+      class="mb-1 navbar navbar-expand-lg navbar-dark info-color nav-bar-style sticky"
+    >
+      <a class="navbar-brand" href="home.html"
+        ><i class="fas fa-signature"></i
+      ></a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent-4"
+        aria-controls="navbarSupportedContent-4"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent-4">
+        <ul class="navbar-nav ml-auto ">
+          <li class="nav-item active">
+            <a
+              class="nav-link example hoverable"
+              href="home.html"
+              id="home-nav-btn"
+              >Home
+              <span class="sr-only"></span>
+            </a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link example hoverable" href="CV.html"
+              >CV
+              <span class="sr-only"></span>
+            </a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link example hoverable" href="personal.html"
+              >Personal
+              <span class="sr-only"></span>
+            </a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link example hoverable" href="contact.html"
+              >Contact
+              <span class="sr-only"></span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!--/.Navbar -->
+
+    <!--Home Page Container-->
+    <div class="page-container" id="home-container">
+      <div class="container">
+        <div class="row">
+          <div class="col-md image-home fadeInLeft" id="image-animation"></div>
+          <div class="col-sm fadeInRight" id="home-content">
+            <h2 id="home-title" class="delayModal">Some words about me...</h2>
+            <p id="home-text-container" class="delayModal">
+              After working as a pharmacist for more than 4 years, I decided
+              it's time for a change, and started studying Web Development. It
+              was a challenge and I enjoyed every moment, without regrets. In
+              the future I want to accept more challenges like this, learn more,
+              and become a better version of myself. Beside all of that, I love
+              dancing, meeting wonderful people, get inspired by them and
+              explore more of what life has to offer.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div>
+      <div class="up-btn-style" id="go-up-home-btn">
+        <lottie-player
+          src="https://assets2.lottiefiles.com/packages/lf20_nqP2pd.json"
+          background="transparent"
+          speed="1"
+          style="width: 110px; height: 110px;"
+          hover
+          loop
+        >
+        </lottie-player>
+        <p class="go-top-text">Go to Top</p>
+      </div>
+
+      <footer class="page-footer font-small cyan darken-3 footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12 py-5">
+              <div class="mb-5 flex-center">
+                <a
+                  href="https://www.facebook.com/ioana.moldovan.91"
+                  class="fb-ic"
+                >
+                  <i
+                    class="fab fa-facebook-f fa-lg white-text mr-md-5 mr-3 fa-2x hover-footer"
+                  >
+                  </i>
+                </a>
+                <a
+                  href="http://www.linkedin.com/in/ioanamariamoldovan"
+                  class="li-ic"
+                >
+                  <i
+                    class="fab fa-linkedin-in fa-lg white-text mr-md-5 mr-3 fa-2x hover-footer"
+                  >
+                  </i>
+                </a>
+                <a href="https://twitter.com/" class="tw-ic">
+                  <i
+                    class="fab fa-twitter fa-lg white-text mr-md-5 mr-3 fa-2x hover-footer"
+                  >
+                  </i>
+                </a>
+                <a href="https://www.instagram.com/" class="ins-ic">
+                  <i
+                    class="fab fa-instagram fa-lg white-text mr-md-5 mr-3 fa-2x hover-footer"
+                  >
+                  </i>
+                </a>
+                <a href="https://ro.pinterest.com" class="pin-ic">
+                  <i
+                    class="fab fa-pinterest fa-lg white-text fa-2x hover-footer"
+                  >
+                  </i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <!-- Footer -->
+
+    <script src="./javascript/home.js"></script>
+    <!-- jQuery -->
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <script>
+      document.getElementById("home-nav-btn").style.color = "#7cd3fd";
+    </script>
+  </body>
+</html>

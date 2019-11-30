@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>My online CV</title>
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.11.2/css/all.css"
+    />
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!-- Material Design Bootstrap -->
+    <link rel="stylesheet" href="css/mdb.min.css" />
+    <link rel="stylesheet" href="./css/cv.css" />
+    <link rel="stylesheet" href="./css/contact.css" />
+  </head>
+
+  <body>
+    <!--Navbar -->
+    <nav
+      class="mb-1 navbar navbar-expand-lg navbar-dark info-color nav-bar-style sticky"
+    >
+      <a class="navbar-brand" href="home.html"
+        ><i class="fas fa-signature"></i
+      ></a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent-4"
+        aria-controls="navbarSupportedContent-4"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent-4">
+        <ul class="navbar-nav ml-auto ">
+          <li class="nav-item active">
+            <a class="nav-link example hoverable" href="home.html"
+              >Home
+              <span class="sr-only"></span>
+            </a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link example hoverable" href="CV.html"
+              >CV
+              <span class="sr-only"></span>
+            </a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link example hoverable" href="personal.html"
+              >Personal
+              <span class="sr-only"></span>
+            </a>
+          </li>
+          <li class="nav-item active">
+            <a
+              class="nav-link example hoverable"
+              href="contact.html"
+              id="contact-nav-btn"
+              >Contact
+              <span class="sr-only"></span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!--/.Navbar -->
+
+    <!--Contact Page Container-->
+
+    <!--Message sent alert-->
+    <div class="alert alert-success fade" role="alert" id="message-sent-alert">
+      Your message was sent successfully!
+    </div>
+
+    <!-- Default form contact -->
+    <div class="col-md-6 animated bounce" id="contact-container">
+      <form
+        class="text-center border border-light p-5 contact-form"
+        method="POST"
+      >
+        <p class="h4 mb-4 contact-title">
+          <i class="far fa-envelope"></i>Contact me
+        </p>
+
+        <!-- Name -->
+        <input
+          type="text"
+          id="contact-name"
+          class="form-control mb-4"
+          placeholder="Name"
+          name="_name"
+        />
+
+        <!-- Email -->
+        <input
+          type="email"
+          id="contact-email"
+          class="form-control mb-4"
+          placeholder="E-mail"
+          name="_replyTo"
+        />
+
+        <!-- Message -->
+        <div class="form-group message-area">
+          <textarea
+            class="form-control rounded-0"
+            id="contact-message"
+            rows="3"
+            placeholder="Message"
+            name="_message"
+          ></textarea>
+        </div>
+
+        <!--Alert-->
+        <div
+          class="alert alert-danger d-none"
+          role="alert"
+          id="contact-alert"
+        ></div>
+
+        <!-- Send button -->
+        <button
+          class="btn btn-info btn-block"
+          type="submit"
+          id="submit-button"
+          value="send"
+        >
+          <i class="far fa-paper-plane"></i>
+          Send
+        </button>
+      </form>
+    </div>
+    <!-- Default form contact -->
+
+    <!--Geolocation-->
+    <div id="map"></div>
+    <!--/Geolocation-->
+
+    <!--/Contact Page Container-->
+
+    <!-- Footer -->
+    <div>
+      <!-- <div class="up-btn-style" id="go-up-cv-btn">
+        <lottie-player
+          src="https://assets2.lottiefiles.com/packages/lf20_nqP2pd.json"
+          background="transparent"
+          speed="1"
+          style="width: 110px; height: 110px;"
+          hover
+          loop
+        >
+        </lottie-player>
+        <p class="go-top-text">Go to Top</p>
+      </div> -->
+
+      <footer class="page-footer font-small cyan darken-3 footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12 py-5">
+              <div class="mb-5 flex-center">
+                <a
+                  href="https://www.facebook.com/ioana.moldovan.91"
+                  class="fb-ic"
+                >
+                  <i
+                    class="fab fa-facebook-f fa-lg white-text mr-md-5 mr-3 fa-2x hover-footer"
+                  >
+                  </i>
+                </a>
+                <a
+                  href="http://www.linkedin.com/in/ioanamariamoldovan"
+                  class="li-ic"
+                >
+                  <i
+                    class="fab fa-linkedin-in fa-lg white-text mr-md-5 mr-3 fa-2x hover-footer"
+                  >
+                  </i>
+                </a>
+                <a href="https://twitter.com/" class="tw-ic">
+                  <i
+                    class="fab fa-twitter fa-lg white-text mr-md-5 mr-3 fa-2x hover-footer"
+                  >
+                  </i>
+                </a>
+                <a href="https://www.instagram.com/" class="ins-ic">
+                  <i
+                    class="fab fa-instagram fa-lg white-text mr-md-5 mr-3 fa-2x hover-footer"
+                  >
+                  </i>
+                </a>
+                <a href="https://ro.pinterest.com" class="pin-ic">
+                  <i
+                    class="fab fa-pinterest fa-lg white-text fa-2x hover-footer"
+                  >
+                  </i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <!-- Footer -->
+
+    <!-- jQuery -->
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+    <!-- <script src="./javascript/cv.js"></script> -->
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <script src="./javascript/contact.js"></script>
+    <script
+      async
+      defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCpfHrYRWHmkI1f1UcpV5EsVZtf-ys7o3Y&callback=initMap"
+    ></script>
+    <script>
+      document.getElementById("contact-nav-btn").style.color = "#7cd3fd";
+    </script>
+  </body>
+</html>
