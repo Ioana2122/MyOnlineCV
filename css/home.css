@@ -79,6 +79,10 @@ header p {
   font-style: oblique;
 }
 
+header p a {
+  color: black !important;
+}
+
 .bounceInUp {
   -webkit-animation-name: bounceInUp;
   animation-name: bounceInUp;
@@ -320,7 +324,6 @@ header p {
   position: absolute;
   right: 0;
   margin-top: -120px;
-  width: 100px;
 }
 
 .up-btn-style:hover {
@@ -334,7 +337,6 @@ header p {
   overflow: hidden;
   margin-top: -40px !important;
   text-align: center;
-  padding-left: 5px;
 }
 
 /*Footer style*/

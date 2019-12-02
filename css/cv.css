@@ -247,7 +247,6 @@ body {
   position: absolute;
   right: 0;
   margin-top: -120px;
-  width: 100px;
 }
 
 .up-btn-style:hover {
@@ -261,7 +260,6 @@ body {
   overflow: hidden;
   margin-top: -40px !important;
   text-align: center;
-  padding-left: 5px;
 }
 
 /*Footer style*/

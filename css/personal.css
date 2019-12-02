@@ -28,8 +28,15 @@ body {
 }
 
 .btn-carousel {
-  width: 30% !important;
-  margin: 5px auto !important;
+  margin: 1% 43% !important;
+}
+
+.btn-carousel-wraper {
+  margin: 0 28% !important;
+}
+
+.btn-carousel-wraper button {
+  width: 150px;
 }
 
 #other-interests,
@@ -46,8 +53,13 @@ body {
   margin-bottom: 5%;
 }
 
-#other-interests-container a {
+#other-interests-container i {
   color: #42494e;
   padding: 2%;
   font-size: 2rem;
+}
+
+#other-interests-container span {
+  color: #35383f;
+  font-size: 1.1rem;
 }
