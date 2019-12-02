@@ -19,7 +19,7 @@ body {
 
 header {
   box-sizing: border-box;
-  min-height: 100vh;
+  min-height: 120vh;
   padding: 30vw 0 5vw;
   position: relative;
   width: 100vw;

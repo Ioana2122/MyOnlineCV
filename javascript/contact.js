@@ -16,9 +16,11 @@ submitBtn.addEventListener("click", e => {
     contactAlert.innerHTML = "";
   }
 
+  debugger;
   if (!contactName.value || !contactEmail.value || !contactMessage.value) {
     activateAlert();
     contactAlert.innerHTML = "All fields must be filled.";
+    return;
   }
 
   let contactData = {
@@ -31,7 +33,6 @@ submitBtn.addEventListener("click", e => {
 });
 
 function sendEmail(URL, contactData) {
-  // debugger;
   fetch(URL, {
     method: "POST",
     headers: {
