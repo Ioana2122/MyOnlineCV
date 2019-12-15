@@ -5,10 +5,9 @@ const contactName = document.getElementById("contact-name");
 const contactEmail = document.getElementById("contact-email");
 const contactMessage = document.getElementById("contact-message");
 const contactAlert = document.getElementById("contact-alert");
-const submitBtn = document.getElementById("submit-button");
 const messageSent = document.getElementById("message-sent-alert");
 
-submitBtn.addEventListener("click", e => {
+document.getElementById("submit-button").addEventListener("click", e => {
   e.preventDefault();
   if (!contactAlert.classList.contains("d-none")) {
     contactAlert.classList.remove("d-block");
@@ -16,7 +15,6 @@ submitBtn.addEventListener("click", e => {
     contactAlert.innerHTML = "";
   }
 
-  debugger;
   if (!contactName.value || !contactEmail.value || !contactMessage.value) {
     activateAlert();
     contactAlert.innerHTML = "All fields must be filled.";
@@ -41,8 +39,6 @@ function sendEmail(URL, contactData) {
     body: JSON.stringify(contactData)
   })
     .then(response => {
-      debugger;
-      console.log(response);
       if (response.status === 403) {
         clearFields();
         activateAlert();

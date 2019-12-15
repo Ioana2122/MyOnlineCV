@@ -60,7 +60,6 @@ body {
   justify-content: center;
   align-items: center;
   box-sizing: border-box;
-  /* height: 100%; */
 }
 
 #cv-left-text h1 {
@@ -236,6 +235,7 @@ body {
 .skill {
   margin-right: 12px;
 }
+
 .ldBar path.mainline {
   stroke-width: 5;
   stroke: #33b5e5;
@@ -243,6 +243,7 @@ body {
 }
 
 /*Go to top button styles*/
+
 .up-btn-style {
   position: absolute;
   right: 0;
@@ -263,6 +264,7 @@ body {
 }
 
 /*Footer style*/
+
 .cyan.darken-3.footer {
   background-color: #42494e !important;
 }

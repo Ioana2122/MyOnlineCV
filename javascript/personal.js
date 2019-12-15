@@ -14,7 +14,8 @@ const matchHeights = () => {
 };
 matchHeights();
 
-// Tooltips Initialization
-$(function() {
-  $('[data-toggle="tooltip"]').tooltip();
-});
+const startFromTop = () => {
+  jQuery("html,body").animate({ scrollTop: 0 }, 0);
+};
+
+startFromTop();
